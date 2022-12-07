@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #singin{
+        border: 5px solid black;
+        padding: 100px;
+        box-shadow: 5px 10px #888888;}
+        label{
+            font-size: larger;
+            color: black;
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <form id="singin">
+        <center><fieldset>
+        <center><h1>Please Enter your details and Click on send Notification button</h1></center>
+        <legend><h1>Details</h1></legend>
+        
+         <label for="text">Name: </label>
+         <input type="text" id="name" name="name"><br><br>
+         <label for="text">Phone number: </label>
+         <input type="text" id="password" name="Password"><br><br>
+         <label for="text">Location: </label>
+         <input type="text" id="password" name="Password"><br><br>
+         <label for="text">Blood Group:</label>
+         <select name="Blood Group" id="cars">
+        <option value="volvo">+O</option>
+        <option value="saab">+A</option>
+        <option value="opel">+B</option>
+        <option value="audi">+AB</option>
+        <option value="volvo">-O</option>
+        <option value="saab">-A</option>
+        <option value="opel">-B</option>
+        <option value="audi">-AB</option>
+        </select>
+         </center>
+         <center><button onclick="myFunction()">Send Notification</button></center>
+         <center><p id="demo"></p></center>
+         <a href="homeblood.html"><h1>Back</h1></a>
+         <script>
+            function myFunction() {
+              document.getElementById("demo").innerHTML = "Your Message have sent to all our donor. ";
+            }
+            </script>
+
+        </fieldset>
+       </form>
+</body>
+</html>
